@@ -33,7 +33,7 @@ Open the project using NetBeans or your preferred Java IDE.
 Build the project and deploy it on the GlassFish server.
 
 4. **Access the Webpage**:
-Open your web browser and navigate to the webpage hosted on the GlassFish server (e.g., `http://localhost:8080/machine-management`).
+Open your web browser and navigate to the webpage hosted on the GlassFish server ('http://localhost:8080/GMachines/machines.jsp').
 
 ## Usage
 
