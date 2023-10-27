@@ -16,7 +16,7 @@
         
     </head>
     <body>
-        <form action="MachineController" method="GET"></form>
+        <form action="MachineController" method="GET">
   
             <fieldset>
                 <legend>INFORMATIONS MACHINES</legend>
