@@ -21,6 +21,18 @@ import service.MachineService;
  */
 @WebServlet(name = "MachineController", urlPatterns = {"/MachineController"})
 public class MachineController extends HttpServlet {
+
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+
+
    MachineService ms=new MachineService();
 
     /**
@@ -39,13 +51,17 @@ public class MachineController extends HttpServlet {
              int id = Integer.parseInt(request.getParameter("id"));
              ms.delete(ms.findById(id));
          }    
-        }
+        }else{
         String ref= request.getParameter("ref");
         String marque=request.getParameter("marque");
         double prix=Double.parseDouble(request.getParameter("prix"));
         ms.create(new Machine(ref,marque,prix));
-        response.sendRedirect("machines.jsp");
+            
     }
+        response.sendRedirect("machines.jsp");
+
+    }
+
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
