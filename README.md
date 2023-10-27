@@ -63,5 +63,6 @@ If you would like to contribute to this project, please follow these steps:
 
 This project is licensed under the [MIT License](LICENSE). You are free to use and modify this project as needed for your own purposes.
 ## Screenshots
-![image](https://github.com/BAJEDDI/TPJSPservlet/assets/147507670/b3e6a63f-651f-42c5-8709-ded9de787c1f)
+![image](https://github.com/BAJEDDI/TPJSPservlet/assets/147507670/30bebf2c-3d1d-4a40-ae68-7ad6b70916f4)
+
 
