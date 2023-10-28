@@ -41,7 +41,7 @@ public class Machine implements Serializable{
     }
 
     
-    public Machine(String marque, String ref, double prix, Salle salle) {
+    public Machine(String ref, String marque, double prix, Salle salle) {
         this.marque = marque;
         this.ref = ref;
         this.prix = prix;

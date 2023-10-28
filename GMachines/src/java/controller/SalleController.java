@@ -5,7 +5,6 @@
  */
 package controller;
 
-import entities.Machine;
 import entities.Salle;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,29 +13,15 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import service.MachineService;
 import service.SalleService;
 
 /**
  *
  * @author USER
  */
-@WebServlet(name = "MachineController", urlPatterns = {"/MachineController"})
-public class MachineController extends HttpServlet {
-
-    /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
-
-
-   MachineService ms=new MachineService();
-SalleService ss = new SalleService();
+@WebServlet(name = "SalleController", urlPatterns = {"/SalleController"})
+public class SalleController extends HttpServlet {
+ SalleService ss=new SalleService();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -48,24 +33,19 @@ SalleService ss = new SalleService();
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        if (request.getParameter("op") != null) {
+                if (request.getParameter("op") != null) {
          if (request.getParameter("op").equals("delete")) {
              int id = Integer.parseInt(request.getParameter("id"));
-             ms.delete(ms.findById(id));
-         }    
-        }else{
-        String ref= request.getParameter("ref");
-        String marque=request.getParameter("marque");
-        double prix=Double.parseDouble(request.getParameter("prix"));
-       Salle s = ss.findById(Integer.parseInt(request.getParameter("salleId")));
-
-        ms.create(new Machine(ref,marque,prix,s));
-            
+             ss.delete(ss.findById(id));
+             }
+              }
+                else{
+              String code = request.getParameter("code");
+               ss.create(new Salle(code));
+         }
+          response.sendRedirect("salles.jsp");
+        
     }
-        response.sendRedirect("machines.jsp");
-
-    }
-
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -81,6 +61,7 @@ SalleService ss = new SalleService();
             throws ServletException, IOException {
         processRequest(request, response);
     }
+        
 
     /**
      * Handles the HTTP <code>POST</code> method.
@@ -106,4 +87,5 @@ SalleService ss = new SalleService();
         return "Short description";
     }// </editor-fold>
 
-}
+    }
+

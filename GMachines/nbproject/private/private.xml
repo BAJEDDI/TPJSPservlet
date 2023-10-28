@@ -5,10 +5,13 @@
         <group>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/service/MachineService.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/entities/Machine.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/controller/SalleController.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/entities/Salle.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/test/Test.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/service/SalleService.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/web/css/style.css</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/web/salles.jsp</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/dao/IDao.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/controller/MachineController.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/GMachines/src/java/util/HibernateUtil.java</file>
