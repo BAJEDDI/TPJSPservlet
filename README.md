@@ -1,7 +1,7 @@
 # TPJSPservlet
-# Machine Management Webpage
+# Machine and Room Management Webpage
 
-Welcome to the Machine Management Webpage project! This web application allows you to manage information about machines, including their details, adding new machines, and deleting them. The project is built using GlassFish, Java, and NetBeans.
+Welcome to the Machine and Room Management Webpage project! This web application allows you to manage information about machines and rooms, including their details, adding new machines and rooms, and deleting them. The project is built using GlassFish, Java, and NetBeans.
 
 ## Table of Contents
 - [Features](#features)
@@ -14,15 +14,19 @@ Welcome to the Machine Management Webpage project! This web application allows y
 
 This webpage provides the following features:
 
-- **View Machine Information**: You can view the details of machines, including their reference, brand, and price.
+- **Machine Management**:
+  - **View Machine Information**: You can view the details of machines, including their reference, brand, and price.
+  - **Add New Machines**: You can add new machines to the system by providing the reference, brand, and price.
+  - **Delete Machines**: You can delete machines that are no longer needed from the system.
 
-- **Add New Machines**: You can add new machines to the system by providing the reference, brand, and price.
-
-- **Delete Machines**: You can delete machines that are no longer needed from the system.
+- **Room Management**:
+  - **View Room Information**: You can view the details of rooms, including their ID and code.
+  - **Add New Rooms**: You can add new rooms to the system by providing the room ID and code.
+  - **Delete Rooms**: You can delete rooms that are no longer needed from the system.
 
 ## Getting Started
 
-To get started with the Machine Management Webpage project, follow these steps:
+To get started with the Machine and Room Management Webpage project, follow these steps:
 
 1. **Clone the Repository**:
 
@@ -39,11 +43,11 @@ Open your web browser and navigate to the webpage hosted on the GlassFish server
 
 Once you have the webpage up and running, you can start using it:
 
-- **View Machines**: Access the webpage to see a list of existing machines with their reference, brand, and price.
+- **View Machines and Rooms**: Access the webpage to see a list of existing machines with their reference, brand, and price, and rooms with their ID and code.
 
-- **Add Machines**: To add a new machine, click on the "Add Machine" button and enter the reference, brand, and price.
+- **Add Machines and Rooms**: To add a new machine or room, click on the "Add Machine" or "Add Room" button and enter the required information.
 
-- **Delete Machines**: To remove a machine, select it from the list and click on the "Delete" button.
+- **Delete Machines and Rooms**: To remove a machine or room, select it from the list and click on the "Delete" button.
 
 ## Contributing
 
@@ -59,10 +63,12 @@ If you would like to contribute to this project, please follow these steps:
 
 5. Create a pull request to the main repository.
 
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use and modify this project as needed for your own purposes.
 ## Screenshots
 ![image](https://github.com/BAJEDDI/TPJSPservlet/assets/147507670/30bebf2c-3d1d-4a40-ae68-7ad6b70916f4)
+![image](https://github.com/BAJEDDI/TPJSPservlet/assets/147507670/0cc4f543-a3eb-4a63-8dbc-57f0759b1d02)
 
 
